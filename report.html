@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Reports</title>
+        <link rel="stylesheet" href="/css/styles.css">
+    </head>
+
+    <body>
+        <main>
+            <div class="header">
+                <div class="left">
+                    <h1>Financial Reports</h1>
+                    <ul class="breadcrumb">
+                        <li><a href="#">
+                                Admin
+                            </a></li>
+                        /
+                        <li><a href="#" class="active">Advance Reporting</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="Finances">
+                <button class="tablink" onclick="openPage(event,'Deposits')" id="defaultOpenSF">Deposits</button>
+                <button class="tablink" onclick="openPage(event,'Withdrawals')">Withdrawals</button>
+                <button class="tablink" onclick="openPage(event,'Transfer')">Transfer</button>
+            </div>
+            <div id="Deposits" class="OpenPage">
+                <table class="Deposits">
+                    <thead>
+                        <th>#</th>
+                        <th>A/C Holder Name</th>
+                        <th>A/C No</th>
+                        <th>Transaction ID</th>
+                        <th>IFSC Code</th>
+                        <th>Timestamp</th>
+                        <th>Amount</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>2:11AM 04.11.2023</td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+            <div id="Withdrawals" class="OpenPage">
+                <table class="Withdrawals">
+                    <thead>
+                        <th>#</th>
+                        <th>A/C Holder Name</th>
+                        <th>A/C No</th>
+                        <th>Transaction ID</th>
+                        <th>IFSC Code</th>
+                        <th>Timestamp</th>
+                        <th>Amount</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>2:11AM 04.11.2023</td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="Transfer" class="OpenPage">
+                <table class="Transfer">
+                    <thead>
+                        <th>#</th>
+                        <th>Sender Name</th>
+                        <th>Sender A/C No</th>
+                        <th>Transaction ID</th>
+                        <th>Sender IFSC Code</th>
+                        <th>Receiver Name</th>
+                        <th>Receiver A/C No</th>
+                        <th>Receiver IFSC Code</th>
+                        <th>Amount</th>
+                        <th>Timestamp</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </main>
+        <script src="/scripts/new.js"></script>
+    </body>
+
+</html>

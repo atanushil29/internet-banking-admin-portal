@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>finance</title>
+        <link rel="stylesheet" href="/css/styles.css">
+    </head>
+
+    <body>
+        <main>
+            <div class="header">
+                <div class="left">
+                    <h1>Finances</h1>
+                    <ul class="breadcrumb">
+                        <li><a href="#">
+                                Admin
+                            </a></li>
+                        /
+                        <li><a href="#" class="active">Finances</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="Finances">
+                <button class="tablink" onclick="openPage(event,'Deposits')" id="defaultOpenSF">Deposits</button>
+                <button class="tablink" onclick="openPage(event,'Withdrawals')">Withdrawals</button>
+                <button class="tablink" onclick="openPage(event,'Transfer')">Transfer</button>
+                <button class="tablink" onclick="openPage(event,'Balance')">Balance Enquiries</button>
+            </div>
+            <div id="Deposits" class="OpenPage">
+                <table class="Deposits">
+                    <thead>
+                            <th>#</th>
+                            <th>A/C Holder</th>
+                            <th>A/C No</th>
+                            <th>Transaction ID</th>
+                            <th>IFSC Code</th>
+                            <th>Action</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>AMSAR12345</td>
+                            <td><input type="number" required><button type="submit"><p><i class="fa-solid fa-circle-dollar-to-slot"></i></p><p>Deposits</p></button></td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>AMSAR12345</td>
+                            <td><input type="number" required><button type="submit"><p><i class="fa-solid fa-circle-dollar-to-slot"></i></p><p>Deposits</p></button></td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+            <div id="Withdrawals" class="OpenPage">
+                <table class="Withdrawals">
+                    <thead>
+                            <th>#</th>
+                            <th>A/C Holder</th>
+                            <th>A/C No</th>
+                            <th>Transaction ID</th>
+                            <th>IFSC Code</th>
+                            <th>Action</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>AMSAR12345</td>
+                            <td><input type="number" name="" id="" required><button type="submit"><p><i class="fa-solid fa-money-bill-transfer"></i></p><p>Withdrawals</p></button></td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>AMSAR12345</td>
+                            <td><input type="number" name="" id="" required><button><p><i class="fa-solid fa-money-bill-transfer"></i></p><p>Withdrawals</p></button></td>
+
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="Transfer" class="OpenPage">
+                <form action="">
+                <div class="sender">
+                    <h4>Sender Account Details</h4>
+                    <div class="row">
+                        <div class="col-1">Account Holder Name</div>
+                        <div class="col-2"><input type="text" name="" id="" required placeholder="Ajay kr Tarafder"></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-1">Account No</div>
+                        <div class="col-2"><input type="number" name="" id="" required placeholder="687867"></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-1">IFSC Code</div>
+                        <div class="col-2"><input type="text" name="" id="" required placeholder="AMSAR12345"></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-1">Transaction ID</div>
+                        <div class="col-2"><input type="number" ></div>
+                    </div>
+                </div>
+                <div class="receiver">
+                    <h4>Receiver Account Details</h4>
+                    <div class="row">
+                        <div class="col-1">Account Holder Name</div>
+                        <div class="col-2"><input type="text" name="" id="" required placeholder="Atanu Shil"></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-1">Account No</div>
+                        <div class="col-2"><input type="number" name="" id="" required placeholder="46468688768"></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-1">IFSC Code</div>
+                        <div class="col-2"><input type="text" name="" id="" required placeholder="AMSAR12345"></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-1">Transfer Amount</div>
+                        <div class="col-2"><input type="number" name="" id="" required placeholder="0000000000"></div>
+                    </div>
+                    <button type="submit"><i class="fa-solid fa-money-bill-transfer"></i>Submit</button>
+                </div>
+                </form>
+            </div>
+            <div id="Balance" class="OpenPage">
+                <table class="Balance">
+                    <thead>
+                        <tr>
+                            <th>A/C Holder Name</th>
+                            <th>Account No.</th>
+                            <th>Type</th>
+                            <th>Email</th>
+                            <th>Address</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Atanu Shil </td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td><button><p><i class="fa-solid fa-eye"></i></p><p>Check Balance</p></button></td>
+                        </tr>
+                </tbody>
+                </table>
+            </div>
+            </main>
+            <script src="/scripts/new.js"></script>
+    </body>
+
+</html>
